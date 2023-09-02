@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon-weather.ico">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="wrapper">
+        <div class="flexx">
+            <h1>WEATHER APP</h1>
+
+            <div class="tab-container">
+                <p class="tab" yourWeather>Your Weather</p>
+                <p class="tab" searchWeather>Search Weather</p>
+            </div>
+
+            <div class="weather-container">
+                <!--grant location-->
+                <div class="sub-grant grant-location">
+                    <img src="./images/location.png" alt="" height="80" width="80">
+                    <p>Grant Location Access</p>
+                    <p>Allow Access to get weather Information</p>
+                    <button class="btn" data-grantAccess>Grant Access</button>
+                </div>
+
+                <!--search weather-->
+                <form class="search-form" data-searchForm>
+                    <input placeholder="Search for City..." data-searchInput>
+                    <button type="submit" class="btn">
+                        <img src="./images/search.png" height="20" width="20">
+                    </button>
+                </form>
+                <div class="error">
+                    <p>INVALID CITY NAME</p>
+                    <img src="./images/not-found.png">
+                </div>
+
+                <!--loading-->
+                <div class="sub-grant loading">
+                    <img src="./images/loading.gif" alt="" height="150" width="150">
+                    <p>Loading</p>
+                </div>
+
+                <!--weather-->
+                <div class="sub-grant weather-info">
+                    <div class="place">
+                        <p data-cityName></p>
+                        <img data-countryIcon>
+                    </div>
+
+                    <p class="desc" data-weatherDesc></p>
+                    <img data-weatherIcon class="icon">
+                    <p data-Temp class="temp"></p>
+
+                    <div class="cards">
+                        <div class="paramter">
+                            <img src="./images/wind.png" alt="">
+                            <p>WINDSPEED</p>
+                            <p data-windspeed></p>
+                        </div>
+
+                        <div class="paramter">
+                            <img src="./images/humidity.png" alt="">
+                            <p>HUMIDITY</p>
+                            <p data-humidity></p>
+                        </div>
+
+                        <div class="paramter">
+                            <img src="./images/cloud.png" alt="">
+                            <p>CLOUDS</p>
+                            <p data-clouds></p>
+                        </div>
+                    </div>
+                    
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/1a8132ebf2.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>
