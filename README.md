@@ -1,6 +1,20 @@
-Developed a dynamic and responsive weather application using HTML, CSS, and JavaScript, incorporating key modern web development practices.
-Current Location Weather: Utilized the 'navigator.geolocation' API to obtain the user's current location and display the real-time weather.
-Search Functionality: Implemented a feature allowing users to search and display weather data for different locations.
-API Integration: Integrated with a weather API (e.g.: OpenWeatherMap) to fetch and display current weather conditions, including temperature, humidity, and weather descriptions.
-Async/Await and Promises: Employed async/await and promise functions to handle asynchronous API calls, ensuring smooth and efficient data fetching.
-Error Handling: Implemented error handling for API requests and geolocation access to enhance user experience and application reliability.
+# Weather App
+
+## Overview
+
+The Weather App provides current weather information based on the user's location or a city search. It uses the OpenWeatherMap API to fetch weather data and features options for automatic location detection and manual city search.
+
+## Features
+
+- **Automatic Location Detection**: Retrieves weather information based on the user's current location. Utilized the 'navigator.geolocation' to obtain it.
+- **City Search**: Allows users to search for weather data by city name.
+- **Weather Information Display**: Shows temperature, weather description, wind speed, humidity, and cloud cover.
+- **Error Handling**: Displays an error message for invalid city names or issues fetching weather data.
+- **Loading Indicator**: Provides visual feedback while data is being fetched.
+
+## Technologies Used
+
+- HTML
+- CSS
+- JavaScript
+- OpenWeatherMap API
